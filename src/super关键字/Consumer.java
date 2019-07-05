@@ -4,9 +4,13 @@ public class Consumer extends Person {//这就表达继承
 	//private String username;
 	
 	public Consumer() {
+		super();//这里有没有这个super()效果是一样的，因为子类实例化时一定是先实例化其父类，然后才实例化子类。
 		System.out.println("Consumer()");
 	}
 	
+//	public Consumer() {
+//		super();
+//	}
 	public Consumer(String username) {
 //		this.setUsername(username);
 		//可以调用父类构造器：实现给username属性赋值的目的
