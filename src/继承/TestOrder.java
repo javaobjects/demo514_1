@@ -12,6 +12,6 @@ public class TestOrder extends Order{
 	
 	public static void main(String[] args) {
 		TestOrder o = new TestOrder();
-		System.out.println(o.id);//子类可以访问到父类中的protected属性
+		System.out.println(o.id);//子类可以访问到父类中的protected属性，默认的不行，private也不行
 	}
 }
