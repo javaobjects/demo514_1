@@ -4,6 +4,9 @@ public class Order {//此处的public是不可修改的。。。若修改，代�
 
 	public int id;
 	
+	protected void showId() {
+		System.out.println(this.id);
+	}
 	private class Test{}
 	protected class Student{};
 }
