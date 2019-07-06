@@ -13,6 +13,7 @@ public class Order {
 	private static Order order;
 	
 	public static Order getInstance() {
+		//Order order = null;
 		if(order == null) {
 			order = new Order();
 		}
