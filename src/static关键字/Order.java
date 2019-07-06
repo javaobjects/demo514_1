@@ -1,6 +1,10 @@
 package static关键字;
 
 public class Order {
+	
+//	public static Order() {//static 不能修饰构造方法
+//	 
+//	}
 
 	/**
 	 * 所有静态变量，通过类名，变量名可以调用Order.count;
@@ -23,6 +27,9 @@ public class Order {
 	 * 也可以通过该类的实例化对象来访问到o1.sort();
 	 */
 	static void sort(Order[] orders) {
+		
+		//id++;//不行 static方法不能访问非静态属性
+		//getId();//不行 static方法不能访问非静态方法
 		System.out.println("sort(Order[] orders)");
 	}
 	
